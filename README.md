@@ -1,41 +1,62 @@
 # JS-arch-learning
-Learning basic design principles, tech, patterns, templates ...
+Learning basic design principles, tech, patterns, templates, data structure...
 
 **1) Paradigms:**
-- Imperative:
- - Non structured;
- - Structured:
-   - Procedural:
-      - OOP (prototype);
-- Declarative:
-  - Functional;
-  - Logical;
-- Data-driven;
-- Generic;
-- ...
+  - Imperative;
+  - Non structured;
+  - Structured:
+    - Procedural:
+      - OOP (class/prototype);
+  - Declarative:
+    - Functional;
+    - Logical;
+  - Data-driven;
+  - Generic;
+  - ...
 
 **2) Techniques:**
-- Asynch programming;
-- Parallel programming;
-- Distributed programming;
-- OOP programming;
-- Visual programming (ER/RUP/CAD/CAM);
-- Ractive programming;
-- Event oriented programming;
-- Functional-reactive programming;
-- Meta-programming;
-- Multyparadigm-programming;
-- ...
+  - Asynch programming;
+  - Parallel programming;
+  - Distributed programming;
+  - OOP programming:
+    - Objects and classes;
+    - Class-based vs prototype-based creation;
+    - Dynamic dispatch/message passing;
+    - Encapsulation;
+    - Composition;
+    - Inheritance (Prototype); ✅
+    - Delegation;
+    - Polymorphism;
+    - Open recursion;
+  - Function programming:
+    - First-class functions;
+    - HOC functions; ✅
+    - Recursion;
+    - Closures; ✅
+    - Currying; ✅
+    - Lazy evaluations;
+    - Referential transparency;
+    - Immutability;
+    - Pure functions;
+    - Partial application; ✅
+  - Visual programming (ER/RUP/CAD/CAM);
+  - Reactive programming;
+  - Event oriented programming;
+  - Functional-reactive programming;
+  - Meta-programming;
+  - Multyparadigm-programming;
+  - ...
 
-**4) Design patterns:**
+**3) GOF Design patterns:**
 - Creational:
   - Abstract Factory;
   - Builder;
-  - Factory;
-  - Prototype;
+  - Factory; ✅
+  - Prototype; ✅
   - Singleton;
+  - Pool; ✅
 - Behaviour:
-  - Chain of responsibility;
+  - Chain of responsibility; ✅
   - Command;
   - Interpreter;
   - Iterator;
@@ -50,14 +71,37 @@ Learning basic design principles, tech, patterns, templates ...
   - Adapter;
   - Bridge;
   - Composite;
-  - Decorator;
-  - Facade;
+  - Decorator; ✅
+  - Facade; ✅
   - Flyweight;
-  - Proxy;
+  - Proxy; ✅
+
+**4) Object creation patterns (OOP):**
+  - module;
+  - mixin; ✅
 
 **5) Principles:**
-- GRASP
-- SOLID
-- YAGNI
-- KISS
-- ...
+  - GRASP;
+  - SOLID;
+  - YAGNI;
+  - KISS;
+  - ...
+  
+**6) Optimization techniques:**
+  - Memoization; ✅
+  - ...
+    
+**7) Data structure:**
+  - Primitive;
+  - Array;
+  - Linked List;
+  - Stack;
+  - Queue;
+  - Binary Tree;
+  - Binary Search Tree;
+  - Heap;
+  - Hashing;
+  - Graph;
+  - Matrix;
+  - Misc;
+  - ...
