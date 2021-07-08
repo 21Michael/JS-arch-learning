@@ -100,7 +100,7 @@ Learning basic design principles, tech, patterns, templates, data structure...
     - WeakMap;  ✅
     - Set;  ✅
     - WeakSet;  ✅
-  - Linked List;  
+  - Linked List; ✅ 
   - Stack;  ✅
   - Queue; ✅
   - Binary Tree;
