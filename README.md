@@ -31,7 +31,7 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - Function programming:
     - First-class functions;
     - HOC functions; ✅
-    - Recursion;
+    - Recursion; ✅
     - Closures; ✅
     - Currying; ✅
     - Lazy evaluations;
@@ -75,8 +75,9 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - Facade; ✅
   - Flyweight;
   - Proxy; ✅
+  - Dependency injection;
 
-**4) Object creation patterns (OOP):**
+**4) Programming language concepts (OOP):**
   - module;
   - mixin; ✅
 
@@ -92,11 +93,16 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - ...
     
 **7) Data structure:**
-  - Primitive;
-  - Array;
-  - Linked List;
-  - Stack;
-  - Queue;
+  - Collections:
+    - Object; ✅
+    - Dequeue (Array);  ✅
+    - Map;  ✅
+    - WeakMap;  ✅
+    - Set;  ✅
+    - WeakSet;  ✅
+  - Linked List;  
+  - Stack;  ✅
+  - Queue; ✅
   - Binary Tree;
   - Binary Search Tree;
   - Heap;
@@ -105,3 +111,41 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - Matrix;
   - Misc;
   - ...
+
+**8) Frameworks:**
+  - Patterns:
+    - Behaviour:
+      - State
+    - Structural:
+      - Composite (components);
+      - Proxy; 
+      - Dependency injection;
+  - Techniques:
+    - Components:
+      - declaration;
+      - communication:
+        - one-way-data-binding; ✅
+        - two-way-data-binding; ✅
+        - Context API (React);
+        - Provide-inject (Vue);
+        - Custom hooks;
+      - event handling; ✅
+      - conditional rendering:
+        - imperative (React); ✅
+        - declarative (Vue); ✅
+      - composition;
+      - HOC;
+      - mixins;
+    - Reactive programming; ✅
+    - Data flow:
+      - props;
+      - Redux;
+      - Vuex;
+      - Flux;
+  Refs:
+    - https://github.com/krasimir/react-in-patterns
+    - https://learn-vuejs.github.io/vue-patterns/patterns/#component-communication
+    - https://www.youtube.com/playlist?list=PLvTBThJr861yMBhpKafII3HZLAYujuNWw
+  Books: 
+    - React Design Patterns and Best Practices (Carlos Santana Roldán);
+    - Vue.js 2 Design Patterns and Best Practices (Paul Halliday);

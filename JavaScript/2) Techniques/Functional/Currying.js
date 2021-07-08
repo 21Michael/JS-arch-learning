@@ -9,10 +9,10 @@ Currying is a transformation of functions that translates a function from callab
 //=========================1) Currying simple========================//
 
 const sum = (a, b, c, d) => (a + b + c + d);
-const curry = (fn) => (...arg) => arg.length  ? curry((...arg2) => fn(...arg,  ...arg2)) : fn(...arg);
+const curry = (fn) => (...arg) => arg.length ? curry((...arg2) => fn(...arg,  ...arg2)) : fn(...arg);
 /*
   curry(sum):
-     curry(fn = sum) => (...arg) => arg.length  ? curry((...arg2) => fn( ...arg,  ...arg2)) : fn( ...arg);
+    curry(fn = sum) => (...arg) => arg.length  ? curry((...arg2) => fn( ...arg,  ...arg2)) : fn( ...arg);
   f(1)(2)(3)(4)():
     f(1):  curry(fn = (1) => (fn = sum) => (...arg) => arg.length  ? curry((...arg2) => fn( ...arg,  ...arg2)) : fn( ...arg));
     f(1)(2):  curry(fn = (2) => (1) => (fn = sum) => (...arg) => arg.length  ? curry((...arg2) => fn( ...arg,  ...arg2)) : fn( ...arg));
