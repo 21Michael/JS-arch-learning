@@ -5,8 +5,8 @@
 // 1)Option API
 <script>
   export default {
-  data() {
-  return { data: null }; // reactivity embedded to the framework;
-},
-};
+      data() {
+        return { data: null }; // reactivity embedded to the framework;
+    },
+  };
 </script>

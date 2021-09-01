@@ -89,8 +89,15 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - ...
   
 **6) Optimization techniques:**
-  - Memoization; ✅
-  - ...
+  - Algorithmic optimizations (https://habr.com/ru/post/350018/):
+    - Memoization; ✅
+  - Language-specific optimizations:
+    - JIT (https://habr.com/ru/company/oleg-bunin/blog/417459/);  ✅
+    - Garbage-collector;
+  - Engine-specific optimizations:
+    - V8;
+    - ...
+  - WebAssembly (WASM);
     
 **7) Data structure:**
   - Collections:
@@ -141,11 +148,13 @@ Learning basic design principles, tech, patterns, templates, data structure...
       - props;
       - Redux;
       - Vuex;
-      - Flux;
-  Refs:
-    - https://github.com/krasimir/react-in-patterns
-    - https://learn-vuejs.github.io/vue-patterns/patterns/#component-communication
-    - https://www.youtube.com/playlist?list=PLvTBThJr861yMBhpKafII3HZLAYujuNWw
-  Books: 
-    - React Design Patterns and Best Practices (Carlos Santana Roldán);
-    - Vue.js 2 Design Patterns and Best Practices (Paul Halliday);
+      - Flux;  
+
+**9) Refs:**
+  - https://github.com/krasimir/react-in-patterns
+  - https://learn-vuejs.github.io/vue-patterns/patterns/#component-communication
+  - https://www.youtube.com/playlist?list=PLvTBThJr861yMBhpKafII3HZLAYujuNWw
+
+**10) Books:**
+  - React Design Patterns and Best Practices (Carlos Santana Roldán);
+  - Vue.js 2 Design Patterns and Best Practices (Paul Halliday);

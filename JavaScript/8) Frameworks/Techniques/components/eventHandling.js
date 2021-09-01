@@ -44,7 +44,7 @@ const Form = () => {
   export default {
   methods: {
     _onNClick: (val) => {
-      console.log(`${field} changed to ${value}`);
+      console.log(val);
     }
   }
 };
@@ -55,7 +55,7 @@ const Form = () => {
   export default {
   setup() {
     const _onNClick = (val) => {
-      console.log(`${field} changed to ${value}`);
+      console.log(val);
     };
 
     return { _onNClick };
