@@ -40,7 +40,8 @@ Learning basic design principles, tech, patterns, templates, data structure...
     - Pure functions;
     - Partial application; ✅
   - Visual programming (ER/RUP/CAD/CAM);
-  - Reactive programming;
+  - Reactive programming:
+    - RxJS;
   - Event oriented programming;
   - Functional-reactive programming;
   - Meta-programming;
@@ -120,13 +121,6 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - ...
 
 **8) Frameworks:**
-  - Patterns:
-    - Behaviour:
-      - State
-    - Structural:
-      - Composite (components);
-      - Proxy; 
-      - Dependency injection;
   - Techniques:
     - Components:
       - declaration;
@@ -143,18 +137,37 @@ Learning basic design principles, tech, patterns, templates, data structure...
       - composition;
       - HOC;
       - mixins;
-    - Reactive programming; ✅
-    - Data flow:
-      - props;
-      - Redux;
-      - Vuex;
-      - Flux;  
+    - Reactivity:
+      - Local (React/Vue); ✅
+      - State managers:
+        - Rendering through changing props (Flux, Redux...);
+        - Observers (MobX, VueX);
+  
+**9) State management patterns:**  
+  1. MVC / MVP / MVVM;  ✅
+  2. Flux:  ✅
+      - Redux: ✅
+          - Hooks:
+            - useSelector (mapStateToProps); ✅
+            - useDispatch (mapDispatchToProps); ✅
+            - useStore; ✅
+          - React-Redux; ✅
+          - Redux-thunk; ✅
+          - Redux-promise; ✅
+          - Redux-saga; ✅   
+          - Redux-toolkit; ✅
+      - Dva; ✅
+      - Reflux;
+      - Fluxxor;
+      - Alt;
+  3. Vuex; ✅
+  4. MobX;
 
-**9) Refs:**
+**10) Refs:**
   - https://github.com/krasimir/react-in-patterns
   - https://learn-vuejs.github.io/vue-patterns/patterns/#component-communication
   - https://www.youtube.com/playlist?list=PLvTBThJr861yMBhpKafII3HZLAYujuNWw
 
-**10) Books:**
+**11) Books:**
   - React Design Patterns and Best Practices (Carlos Santana Roldán);
   - Vue.js 2 Design Patterns and Best Practices (Paul Halliday);
