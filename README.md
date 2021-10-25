@@ -161,7 +161,7 @@ Learning basic design principles, tech, patterns, templates, data structure...
       - Fluxxor;
       - Alt;
   3. Vuex; ✅
-  4. MobX;
+  4. MobX; ✅
 
 **10) Refs:**
   - https://github.com/krasimir/react-in-patterns
