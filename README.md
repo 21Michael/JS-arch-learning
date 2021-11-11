@@ -54,7 +54,7 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - Builder;
   - Factory; ✅
   - Prototype; ✅
-  - Singleton;
+  - Singleton; ✅
   - Pool; ✅
 - Behaviour:
   - Chain of responsibility; ✅
@@ -65,14 +65,14 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - Memento;
   - Observer;
   - State;
-  - Strategy;
+  - Strategy; ✅
   - Template method;
   - Visitor;
 - Structural:
   - Adapter;
   - Bridge;
   - Composite;
-  - Decorator; ✅
+  - Decorator (Wrapper); ✅
   - Facade; ✅
   - Flyweight;
   - Proxy; ✅
