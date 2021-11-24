@@ -82,11 +82,22 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - module;
   - mixin; ✅
 
-**5) Principles:**
-  - GRASP;
-  - SOLID;
-  - YAGNI;
-  - KISS;
+**5) Design Principles:**
+  - **Functional programming principles:** ✅
+    - Pure Functions; ✅
+    - No side effects; ✅
+    - Immutability; ✅
+    - Referential transparency; ✅
+    - Functions as first-class entities; ✅
+    - Higher order functions; ✅
+    - Disciplined state; ✅
+  - **OOP programming principles:**
+    - Dependency Injection;
+    - GRASP;
+    - SOLID;
+    - DRY;
+    - YAGNI;
+    - KISS;
   - ...
   
 **6) Optimization techniques:**
