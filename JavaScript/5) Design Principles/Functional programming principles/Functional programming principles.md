@@ -30,21 +30,31 @@ place in object oriented programming.
     you require a real value from it (for example an indexed element).  
     It’s a good way of making your program more efficient by avoiding unnecessary 
     evaluations.
+  - **Immutability (FE): increasing in DOM performance**  
+    Instead of every time when the object was mutated search through all its structure
+    and find difference for updating it, immutability allows just create fully new 
+    component and just compare memory pointer (link to the heap). But it force updating
+    all tree therefore virtual DOM solves mutability problem;
+    
+
+  - **Immutability: increasing in GC performance (Mark and Sweep algorithm)**
+    Instead of every time when the object was mutated search through all its structure
+    and find difference for marking it, it just creates fully new structure;
 
 ### FP disadvantages: 
     
-  - **Reduction in performance**  
+  - **Immutability: memory overfilling**  
     Immutable values combined with recursion might lead to a reduction in performance and 
     engagement of memory.  
     <ins>**Example:**</ins>
     ```js
-      const map1 = { a: 1, b: 2, c:3 };
+      const map1 = { a: 1, b: 2, c: 3 };
       const map2 = map1.map(...);
     ```
     **Heap:**  
     ![link](https://drive.google.com/uc?id=1YkzgT8Bo60_Z8MswRh5-tnMLGdutxvdE)
     
-    <ins>**Solution:**</ins> Immutable.js lib.
+    <ins>**Solution:**</ins> Immutable.js lib.  
     **Heap:**  
     ![link](https://drive.google.com/uc?id=1-iHuY6ffLzbZ_YGJehKuY97f_eclpdZZ)
     
