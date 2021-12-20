@@ -79,33 +79,47 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - Dependency injection;
 
 **4) Programming language concepts (OOP):**
-  - module;
-  - mixin; ✅
+  - [module](); ✅
+  - [mixin](); ✅
 
 **5) Design Principles:**
-  - **Functional programming principles:** ✅
-    - Pure Functions; ✅
-    - No side effects; ✅
-    - Immutability; ✅
-    - Referential transparency; ✅
-    - Functions as first-class entities; ✅
-    - Higher order functions; ✅
-    - Disciplined state; ✅
+  - [**Functional programming principles:**](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/5)%20Design%20Principles/Functional%20programming%20principles/Functional%20programming%20principles.md) ✅
+    - `Pure Functions;` ✅
+    - `No side effects;` ✅
+    - `Immutability;` ✅
+    - `Referential transparency;` ✅
+    - `Functions as first-class entities;` ✅
+    - `Higher order functions;` ✅
+    - `Disciplined state;` ✅
   - **OOP programming principles:**
-    - Dependency Injection;
-    - GRASP;
-    - SOLID;
-    - DRY;
-    - YAGNI;
-    - KISS;
+    - **Dependency Injection;**
+    - **GRASP:**
+      1. `Информационный эксперт (Information Expert);` ✅
+      2. `Создатель (Creator);`  ✅
+      3. `Контроллер (Controller);`  ✅
+      4. `Слабое зацепление (Low Coupling);`  ✅
+      5. `Высокая связность (High Cohesion);`  ✅
+     	6. `Полиморфизм (Polymorphism);` ✅
+      7. `Чистое изготовление (Pure Fabrication);` ✅
+      8. `Перенаправление (Indirection);` ✅
+      9. `Устойчивость к изменениям (Protected Variations);` ✅
+    - **SOLID:**
+      1. `Принцип единственной ответственности (single responsibility principle);`
+      2. `Принцип открытости/закрытости (open–closed principle);`
+      3. `Принцип подстановки Лисков (Liskov substitution principle);`
+      4. `Принцип разделения интерфейса (interface segregation principle);`
+      5. `Принцип инверсии зависимостей (dependency inversion principle);`
+    - **DRY** (Don’t Repeat Youself);
+    - **YAGNI** (You aren't gonna need it);
+    - **KISS** (KEEP IT SIMPLE, STUPID);
   - ...
   
 **6) Optimization techniques:**
   - Algorithmic optimizations (https://habr.com/ru/post/350018/):
-    - Memoization; ✅
+    - [Memoization](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/6)%20Optimization%20techniques/Algorithmic%20optimizations/Memoization/memoization.js); ✅
   - Language-specific optimizations:
-    - JIT (https://habr.com/ru/company/oleg-bunin/blog/417459/);  ✅
-    - Garbage-collector;
+    - [JIT](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/6)%20Optimization%20techniques/Language-specific%20optimizations/JIT/JIT.md);  ✅
+    - [Garbage-collector](https://github.com/21Michael/Backend-arch-learning/blob/main/4)%20NodeJS/Engine%20mechanisms/NodeJS/Garbage%20collector.md);  ✅
   - Engine-specific optimizations:
     - V8;
     - ...
@@ -113,15 +127,15 @@ Learning basic design principles, tech, patterns, templates, data structure...
     
 **7) Data structure:**
   - Collections:
-    - Object; ✅
-    - Dequeue (Array);  ✅
-    - Map;  ✅
-    - WeakMap;  ✅
-    - Set;  ✅
-    - WeakSet;  ✅
-  - Linked List; ✅ 
-  - Stack;  ✅
-  - Queue; ✅
+    - [Object](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/7)%20Data%20structure/collections/object.js); ✅
+    - [Dequeue (Array)](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/7)%20Data%20structure/collections/array.js);  ✅
+    - [Map](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/7)%20Data%20structure/collections/Map.js);  ✅
+    - [WeakMap](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/7)%20Data%20structure/collections/WeakMap.js);  ✅
+    - [Set](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/7)%20Data%20structure/collections/Set.js);  ✅
+    - [WeakSet](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/7)%20Data%20structure/collections/WeakSet.js);  ✅
+  - [Linked List](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/7)%20Data%20structure/linkedList.js); ✅ 
+  - [Stack](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/7)%20Data%20structure/stack.js);  ✅
+  - [Queue](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/7)%20Data%20structure/queue.js); ✅
   - Binary Tree;
   - Binary Search Tree;
   - Heap;
@@ -134,45 +148,35 @@ Learning basic design principles, tech, patterns, templates, data structure...
 **8) Frameworks:**
   - Techniques:
     - Components:
-      - declaration;
       - communication:
-        - one-way-data-binding; ✅
-        - two-way-data-binding; ✅
-        - Context API (React);
-        - Provide-inject (Vue);
-        - Custom hooks;
-      - event handling; ✅
+        - [one-way-data-binding](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/8)%20Frameworks/Techniques/components/communication/oneWayDataBinding.js); ✅
+        - [two-way-data-binding](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/8)%20Frameworks/Techniques/components/communication/twoWayDataBinding.js); ✅
+      - [event handling](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/8)%20Frameworks/Techniques/components/eventHandling.js); ✅
       - conditional rendering:
-        - imperative (React); ✅
-        - declarative (Vue); ✅
-      - composition;
-      - HOC;
-      - mixins;
+        - [imperative (React)](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/8)%20Frameworks/Techniques/components/conditionalRendering/imperative%20(React).js); ✅
+        - [declarative (Vue)](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/8)%20Frameworks/Techniques/components/conditionalRendering/declarative%20(Vue).js); ✅
     - Reactivity:
-      - Local (React/Vue); ✅
-      - State managers:
-        - Rendering through changing props (Flux, Redux...);
-        - Observers (MobX, VueX);
+      - [Local (React/Vue)](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/8)%20Frameworks/Reactivity/Local/LocalState.js); ✅
   
 **9) State management patterns:**  
-  1. MVC / MVP / MVVM;  ✅
-  2. Flux:  ✅
-      - Redux: ✅
+  1. [MVC / MVP / MVVM](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/1.%20MVC_MVP_MVVM.md);  ✅
+  2. [Flux](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Flux.md):  ✅
+      - [Redux](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Redux.md): ✅
           - Hooks:
-            - useSelector (mapStateToProps); ✅
-            - useDispatch (mapDispatchToProps); ✅
-            - useStore; ✅
-          - React-Redux; ✅
-          - Redux-thunk; ✅
-          - Redux-promise; ✅
-          - Redux-saga; ✅   
-          - Redux-toolkit; ✅
-      - Dva; ✅
+            - [useSelector (mapStateToProps)](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Hooks/useSelector.md); ✅
+            - [useDispatch (mapDispatchToProps)](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Hooks/useDispatch.md6); ✅
+            - [useStore](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Hooks/useStore.md); ✅
+          - [React-Redux](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/React-Redux.md); ✅
+          - [Redux-thunk](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Redux-thunk.md); ✅
+          - [Redux-promise](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Redux-promise.md); ✅
+          - [Redux-saga](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Redux-saga.md); ✅   
+          - [Redux-toolkit](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Redux-toolkit.md); ✅
+      - [Dva](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Dva.md); ✅
       - Reflux;
       - Fluxxor;
       - Alt;
-  3. Vuex; ✅
-  4. MobX; ✅
+  3. [Vuex](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/3.%20Vuex.md); ✅
+  4. [MobX](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/4.%20MobX.md); ✅
 
 **10) Refs:**
   - https://github.com/krasimir/react-in-patterns
