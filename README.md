@@ -92,8 +92,7 @@ Learning basic design principles, tech, patterns, templates, data structure...
     - `Higher order functions;` ✅
     - `Disciplined state;` ✅
   - **OOP programming principles:**
-    - **Dependency Injection;**
-    - **GRASP:**
+    - **GRASP:** ✅
       1. `Информационный эксперт (Information Expert);` ✅
       2. `Создатель (Creator);`  ✅
       3. `Контроллер (Controller);`  ✅
@@ -103,13 +102,13 @@ Learning basic design principles, tech, patterns, templates, data structure...
       7. `Чистое изготовление (Pure Fabrication);` ✅
       8. `Перенаправление (Indirection);` ✅
       9. `Устойчивость к изменениям (Protected Variations);` ✅
-    - **SOLID:**
-      1. `Принцип единственной ответственности (single responsibility principle);`
-      2. `Принцип открытости/закрытости (open–closed principle);`
-      3. `Принцип подстановки Лисков (Liskov substitution principle);`
-      4. `Принцип разделения интерфейса (interface segregation principle);`
-      5. `Принцип инверсии зависимостей (dependency inversion principle);`
-    - **DRY** (Don’t Repeat Youself);
+    - **SOLID:** ✅
+      1. `Принцип единственной ответственности (single responsibility principle);` ✅
+      2. `Принцип открытости/закрытости (open–closed principle);` ✅
+      3. `Принцип подстановки Лисков (Liskov substitution principle);` ✅
+      4. `Принцип разделения интерфейса (interface segregation principle);` ✅
+      5. `Принцип инверсии зависимостей (dependency inversion principle);` ✅
+    - **DRY** (Don’t Repeat Yourself);
     - **YAGNI** (You aren't gonna need it);
     - **KISS** (KEEP IT SIMPLE, STUPID);
   - ...
