@@ -10,7 +10,22 @@ an alternative to MVC architecture. The Flux architecture is based on the follow
     components (React = V);
   - **Dispatcher** – Coordinates actions & updates to stores;
     
-![link](https://miro.medium.com/max/875/1*WNMEPdtK9TlayHJ1wcUZPQ.png)
+![link](https://miro.medium.com/max/875/1*WNMEPdtK9TlayHJ1wcUZPQ.png)  
+
+ From the first sight, there is no actual benefits of using the Flux. For some cases it's true
+(when MVC used in separate components with isolated store) for example inside React component for
+own component's state there is no profit of using Flux.  
+
+[![](../../../images/087fb20b-edae-40d4-ae41-8298a3af5ae4-original.png)](../../../images/087fb20b-edae-40d4-ae41-8298a3af5ae4-original.png)
+
+But the problems came when the data from store has to be used inside different components.   
+**The problems:**   
+- changing the data that required inside one component effect all store and starting cascading
+  effect of re-rendering all other components that used the data from the same store;
+- difficult to debug;
+- broke the MVC pattern (one way direction);
+
+[![](../../../images/8fdb1917-90da-4070-b3d7-c7269417c67d-original.png)](../../../images/8fdb1917-90da-4070-b3d7-c7269417c67d-original.png)
 
 **1) Преимущество Flux над MVC:**  
   - **The Flow:** Flux очень требователен к потоку данных в приложении. Dispatcher данных
@@ -37,7 +52,7 @@ an alternative to MVC architecture. The Flux architecture is based on the follow
     export default ActionTypes;
 ```
 
-**Dispatcher:**
+**Dispatcher (singleton, pub-sub event pattern):**
 ```js
     import {Dispatcher} from "flux";
      

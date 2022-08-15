@@ -1,6 +1,6 @@
 # Redux (oneway-directional):  
 
-Redux is a library, which implements the idea of Flux but in quite a different way. Redux 
+Redux is a library, which implements the idea of Flux but in a quite different way. Redux 
 architecture introduces new components like:
 
   - **Reducer:** Logic that decides how your data changes exist in pure functions;
@@ -15,18 +15,19 @@ based on the kind of action it receives. Store creates a new state and sends an 
 
 **1) Преимущество Redux над Flux:**  
 
-У Flux есть некоторые недостатки (функции). Например, приложение может иметь несколько 
-хранилищ, и могут быть зависимости между несколькими хранилищами, хранилища инкапсулируют 
-данные и обрабатывают логику данных.
-
-![link](https://russianblogs.com/images/189/80b7f474c1f9467636abaf84f7b3bfbd.JPEG)
+**У Flux есть некоторые недостатки (функции):**
+- Приложение может иметь несколько хранилищ, и могут быть зависимости между несколькими хранилищами,
+  хранилища инкапсулируют данные и обрабатывают логику данных;
+  ![link](https://russianblogs.com/images/189/80b7f474c1f9467636abaf84f7b3bfbd.JPEG)
+- Store mutation;
 
 ### Redux решает эти проблемы с помощью:
 
   - **Без диспатчера:** Redux избавляется от концепции диспатчера (dispatcher). Он может сделать
     это, потому что Redux имеет только одно хранилище, поэтому существует только один пункт 
     назначения для передачи новых действий (actions), что устраняет необходимость в диспатчере
-    (dispatcher).
+    (dispatcher). Это позволило сделать store неизменяемым (immutable), с помощью функций
+    (reducers) которые принимают previous state, изменяют его и возвращают полностью новый state.
     
   - **Единственный, менее запутанный store:** С Redux все состояние вашего приложения находится
     в централизованном хранилище (store), которое служит единственным источником правды 
