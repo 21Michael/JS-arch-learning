@@ -30,7 +30,7 @@ Learning basic design principles, tech, patterns, templates, data structure...
     - Open recursion;
   - Function programming:
     - First-class functions;
-    - [HOC functions;);](JavaScript/2\)Techniques/Functional/HOCFunctions.js) ✅
+    - [HOC functions;](JavaScript/2\)Techniques/Functional/HOCFunctions.js) ✅
     - [Recursion;](JavaScript/2\)Techniques/Functional/Recursion.js) ✅
     - [Closures;](JavaScript/2\)Techniques/Functional/Closures.js) ✅
     - [Currying;](JavaScript/2\)Techniques/Functional/Currying.js) ✅
@@ -72,7 +72,7 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - Adapter;
   - Bridge;
   - Composite;
-  - [Decorator (Wrapper);](JavaScript/3\)GOF-Design-Patterns/Structural/Decorator (Wrapper)) ✅
+  - [Decorator (Wrapper);](JavaScript/3\)GOF-Design-Patterns/Structural/Decorator-(Wrapper)) ✅
   - [Facade;](JavaScript/3\)GOF-Design-Patterns/Structural/facade.js) ✅
   - Flyweight;
   - [Proxy;](JavaScript/3\)GOF-Design-Patterns/Structural/proxy) ✅
@@ -118,7 +118,7 @@ Learning basic design principles, tech, patterns, templates, data structure...
     - [Memoization](JavaScript/6\)Optimization-techniques/Algorithmic-optimizations/Memoization/memoization.js); ✅
   - Language-specific optimizations:
     - [JIT](JavaScript/6\)Optimization-techniques/Language-specific-optimizations/JIT/JIT.md);  ✅
-    - [Garbage-collector](JavaScript/6\)Optimization-techniques/Language-specific-optimizations/Garbage-collector/Garbage-collector.md);  ✅
+    - [Garbage-collector](https://github.com/21Michael/Backend-arch-learning/blob/main/4)NodeJS/Engine-mechanisms/NodeJS/Garbage_collector.md);  ✅
   - Engine-specific optimizations:
     - V8;
     - ...

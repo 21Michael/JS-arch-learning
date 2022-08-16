@@ -35,8 +35,6 @@ place in object oriented programming.
     and find difference for updating it, immutability allows just create fully new 
     component and just compare memory pointer (link to the heap). But it force updating
     all tree therefore virtual DOM solves mutability problem;
-    
-
   - **Immutability: increasing in GC performance (Mark and Sweep algorithm)**
     Instead of every time when the object was mutated search through all its structure
     and find difference for marking it, it just creates fully new structure;

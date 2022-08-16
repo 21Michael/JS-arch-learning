@@ -210,13 +210,12 @@ class Square extends Rect {
 // Usage
 
 const useRect = rect => {
-   if (rect instanceof Square) { // violation !!!!!!!!!!!!!!!!!!!!!!
+  console.log({ rect });
+  console.log({ area: rect.area });
+
+  if (rect instanceof Square) { // subclass violate unifation of interfaces of the superclass !!!!!!!!!!!!!!!!!!!!!!
       console.log({ rect }); 
       console.log({ area: rect.areaSquare });
-   }
-   else if(rect instanceof Rect) { // violation !!!!!!!!!!!!!!!!!!!!!!
-      console.log({ rect });
-      console.log({ area: rect.area });
    }
 };
 
@@ -262,7 +261,6 @@ class Square extends Rect {
 // Usage
 
 const useRect = rect => {
-  rect.width = 10;
   console.log({ rect });
   console.log({ area: rect.area });
 };

@@ -148,7 +148,7 @@ Definitely which object should be responsible for creating a class Y instance.
 Не выполняет работу самостоятельно, а делегирует компетентным исполнителям.
 ```
 
-![link](https://www.devopsschool.com/blog/wp-content/uploads/2020/09/Untitled-3-1.jpg)
+[![](../../../../images/Model-View-Controller-Design-Pattern.ppm)](../../../../images/Model-View-Controller-Design-Pattern.ppm)
 
 Шаблон сontroller решает давнюю проблему разделения интерфейса и логики в 
 интерактивном приложении. Это не что иное, как C из аббревиатуры MVC. Этот шаблон
@@ -328,8 +328,6 @@ Polymorphism решает проблему обработки альтернат
 Создание дополнительных слоев абстракций для High Cohesion и Low Coupling.
 ```
 
-![link](https://lh3.googleusercontent.com/proxy/tU7ZbST9WwXw9qwJoQNWEpiarccrslLKu5B3Gl9d330-zkZh-0b358VZMiKlfSXOqd6dapcg5EyJCxAmLziYLrdrYox695lyj-3j)
-
 Формулировки и мотивации дополнительных шаблонов GRASP не так очевидны. И без 
 примеров здесь трудно ориентироваться. Проблемой, решаемой Pure Fabrication,
 является обеспечение реализации шаблонов High Cohesion и Low Coupling или других 
@@ -377,7 +375,7 @@ Polymorphism решает проблему обработки альтернат
 Обеспечить устойчивость интерфейса.
 ```
 
-![link](https://lh3.googleusercontent.com/proxy/DBw_h1M-OvY-DmmqqIBd0m_vPj7c8-xdsBDOQkSnupYOeRxXu8naR0KJL8k9KehL--xyNiSK0R6YgLNsKyfj0LG3VQ)
+[![](../../../../images/042811_2030_designpatte31.png)](../../../../images/042811_2030_designpatte31.png)
 
 Основная проблема, решаемая шаблоном Protected Variations: как спроектировать 
 объекты, подсистемы и систему, чтобы изменение этих элементов не оказывало 
