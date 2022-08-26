@@ -236,3 +236,5 @@ export default Container.create(AppContainer);
 |-----------------------|----------------------|--------------------------|
 |Shines well in both client and server-side frameworks|Supports client-side framework|Supports client-side framework|
 |Supports: Front-end frameworks like  AngularJS, Ember, Backbone, Sprout, and Knockout. Back-end frameworks like  Spring, Ruby on Rails, Django, Meteor.|Supports Front-end frameworks like  React, AngularJS, Vue.js, and Polymer|Supports Front-end frameworks like React, Vue.js, AngularJS, Ember, Backbone.js, Meteor, and Polymer|
+
+[![](../../../../images/mvc+redux.drawio.png)](../../../../images/mvc+redux.drawio.png)
