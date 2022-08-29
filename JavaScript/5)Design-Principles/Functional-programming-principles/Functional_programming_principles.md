@@ -67,19 +67,19 @@ place in object oriented programming.
 
 **Example:**  
   - **Not pore function:**
-  ```js
-    const name = 'Alice'
-    const sayHi = () => {
-        console.log(`Hi ${name}`) // side effect (uses varable from globale scope)
-    };
-
-    sayHi();
-  ```  
+      ```js
+        const name = 'Alice'
+        const sayHi = () => {
+            console.log(`Hi ${name}`) // side effect (uses varable from globale scope)
+        };
+    
+        sayHi();
+      ```  
   - **Pure function:**  
-  ```js
-    const sayHi = (name) => `Hi ${name}`;
-    sayHi(‘Alice’);
-  ```
+      ```js
+        const sayHi = (name) => `Hi ${name}`;
+        sayHi(‘Alice’);
+      ```
     
 ## 2) No side effects (Idempotent):
 Side effects are treated as evil by the functional programming paradigm. Side effects are 
@@ -123,47 +123,47 @@ immediately making your code safer and more predictable.
 
 **Example:**
   - **Mutation**
-  ```js
-    const mass = [1, 2, 3];
-    mass[0] = -1;
-    
-    console.log(mass); // [-1, 2, 3];
-  ```  
+      ```js
+        const mass = [1, 2, 3];
+        mass[0] = -1;
+        
+        console.log(mass); // [-1, 2, 3];
+      ```  
   - **Immutable:**
-  ```js
-    const mass = [1, 2, 3];
-    const newMass = mass.map((e, i) => (i === 0 && -1 || e));
-    
-    console.log(mass); // [1, 2, 3];
-    console.log(newMass); // [-1, 2, 3];
-  ```
+      ```js
+        const mass = [1, 2, 3];
+        const newMass = mass.map((e, i) => (i === 0 && -1 || e));
+        
+        console.log(mass); // [1, 2, 3];
+        console.log(newMass); // [-1, 2, 3];
+      ```
 
 **Immutability in JS:**
   - **Array methods**
     - slice / filter / concat / map:
-    ```js
-    let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-    let citrus = fruits.slice(1, 3);
-    
-    console.log(citrus); // Outputs: Orange,Lemon
-    console.log(fruits); // Outputs: Banana, Orange, Lemon, Apple, Mango
-    ```
+        ```js
+            let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+            let citrus = fruits.slice(1, 3);
+            
+            console.log(citrus); // Outputs: Orange,Lemon
+            console.log(fruits); // Outputs: Banana, Orange, Lemon, Apple, Mango
+        ```
   - **JS operators:**
     - Spread operator;
-    ```js
-    let fruits = ["Banana", "Orange"];
-    let updatedFruits = […fruits, 'Mango']; // Outputs: Banana, Orange, Mango
-    ```
+        ```js
+            let fruits = ["Banana", "Orange"];
+            let updatedFruits = […fruits, 'Mango']; // Outputs: Banana, Orange, Mango
+        ```
   - **Object methods:**
     - Object.freeze()
-    ```js
-    const person = Object.freeze({
-      name: "John",
-      lastName: "Dell"
-    });
-    
-    person.name = "Max"; //Outputs: Cannot assign to read-only property 'name'
-    ```
+        ```js
+            const person = Object.freeze({
+              name: "John",
+              lastName: "Dell"
+            });
+            
+            person.name = "Max"; //Outputs: Cannot assign to read-only property 'name'
+        ```
     !!! The nested objects can be changed. Object.freeze() does only a **shallow freeze.**
 
 ## 4) Referential transparency (side effects relied on logic outside of function):
@@ -175,30 +175,30 @@ testable.
 
 **Example:**
   - **Referential transparency:**
-```js
-let a = (num1,num2) => {
-return num1+num2;
-}
-
-let b = (num) => {
-return num*3;
-}
-
-console.log(b(a(6,4))) //output will be 30
-// here you can replace a(6,4) expression with value 10 and this will not effect to the result of the program because it returns the same value: 10
-// Hence you can replace console.log(b(a(6,4))) to console.log(b(10)) as the function is referentially transparent.
-```
+    ```js
+        let a = (num1, num2) => {
+          return num1 + num2;
+        }
+        
+        let b = (num) => {
+          return num * 3;
+        }
+        
+        console.log(b(a(6,4))) //output will be 30
+        // here you can replace a(6,4) expression with value 10 and this will not effect to the result of the program because it returns the same value: 10
+        // Hence you can replace console.log(b(a(6,4))) to console.log(b(10)) as the function is referentially transparent.
+    ```
   - **No Referential transparency:**
-```js
-let c = (num1,num2) => {
-    console.log(`Value of num1 is:${num1} and value of num2 is:${num2}`);
-    return num1+num2;
-}
-
-console.log(b(c(6,4))) //output will be 30
-// here you cannot replace expression c(3,4) with value 10 as it affects the result of the program
-// function c has console.log(), which is one type of side effect. So, the function ‘c’ is not referentially transparent
-```
+    ```js
+        let c = (num1, num2) => {
+            console.log(`Value of num1 is:${num1} and value of num2 is:${num2}`);
+            return num1 + num2;
+        }
+        
+        console.log(b(c(6,4))) //output will be 30
+        // here you cannot replace expression c(3,4) with value 10 as it affects the result of the program
+        // function c has console.log(), which is one type of side effect. So, the function ‘c’ is not referentially transparent
+    ```
 
 ## 5) Functions as first-class entities:
 This just means that functions are able to be passed as arguments to other functions, 
@@ -206,37 +206,37 @@ returned as values from other functions, stored in data structures and assigned 
 variables.
 
   - Functions in JS can be assigned to variables:
-```js
-const sayHi = () => {
-  return 'Hi ';
-}
-
-console.log(sayHi()); // Outputs: Hi
-```
+    ```js
+        const sayHi = () => {
+          return 'Hi ';
+        }
+        
+        console.log(sayHi()); // Outputs: Hi
+    ```
 
   - Functions in JS can be passed as arguments to a function:
-```js
-const sayHiToSomeone = (callback, name) => {
-  return callback() + ' ' + name;
-}
-
-console.log(sayHiToSomeone(sayHi, 'Max')); // Outputs: Hi Max
-```
+    ```js
+        const sayHiToSomeone = (callback, name) => {
+          return callback() + ' ' + name;
+        }
+        
+        console.log(sayHiToSomeone(sayHi, 'Max')); // Outputs: Hi Max
+    ```
 
   - Functions in JS can be returned from a function:
-```js
-const greeterConstructor = greeting => {
-  return country => {
-    return greeting + ' ' + country;
-  }
-}
-
-const engGreeter = greeterConstructor('Welcome to ');
-console.log(engGreeter('England.')); // Outputs: Welcome to England.
-
-const gerGreeter = greeterConstructor('Welkom Bij ');
-console.log(gerGreeter('Duits.')) // Outputs: Welkom Bij Duits.
-```
+    ```js
+        const greeterConstructor = greeting => {
+          return country => {
+            return greeting + ' ' + country;
+          }
+        }
+        
+        const engGreeter = greeterConstructor('Welcome to ');
+        console.log(engGreeter('England.')); // Outputs: Welcome to England.
+        
+        const gerGreeter = greeterConstructor('Welkom Bij ');
+        console.log(gerGreeter('Duits.')) // Outputs: Welkom Bij Duits.
+    ```
 
 ## 6) Higher order functions:
 Higher order functions are functions which do at least one of the following:
@@ -246,87 +246,87 @@ Higher order functions are functions which do at least one of the following:
 **Example:** Array Map, Array Filter, Array Reduce and Array Sort.
 ```js
 
-const hoFunc = function() {
-  return function() {
-    return 88;
-  }
-}
-hoFunc() // will return function
-hoFunc()() // will return 88
-// hoFunc returns a function because it is a Higher-Order Function
- 
-const fn = function(x) {
-  return x*2;
-}
- 
-const hoFunc2 = function(fn) {
-  return fn(8);
-}
- 
-hoFunc2(fn); // will return 16
-// hoFunc2 accepts the function as an argument. Hence, it is a Higher-Order Fun
+    const hoFunc = function() {
+      return function() {
+        return 88;
+      }
+    }
+    hoFunc() // will return function
+    hoFunc()() // will return 88
+    // hoFunc returns a function because it is a Higher-Order Function
+     
+    const fn = function(x) {
+      return x*2;
+    }
+     
+    const hoFunc2 = function(fn) {
+      return fn(8);
+    }
+     
+    hoFunc2(fn); // will return 16
+    // hoFunc2 accepts the function as an argument. Hence, it is a Higher-Order Fun
 ```
 
 ## 7) Disciplined state:
 Disciplined state is the opposite of shared, mutable state.  
 
 **Example:**
-  - Shared + mutable state:
-```js
-function logElements(arr) {
-  while (arr.length > 0) {
-    console.log(arr.shift());
-  }
-}
+  - **Shared + mutable state:**  
+    ```js
+        function logElements(arr) {
+          while (arr.length > 0) {
+            console.log(arr.shift());
+          }
+        }
+        
+        const arr = ['banana', 'orange', 'apple'];
+        
+        function main() {
+          console.log('Before sorting:');
+          logElements(arr);
+        
+          arr.sort();
+        
+          console.log('After sorting:');
+          logElements(arr);
+        }
+        
+        main();
+        // Before sorting:
+        // "banana"
+        // "orange"
+        // "apple"
+        // After sorting:
+        // undefined
+    ```
 
-const arr = ['banana', 'orange', 'apple'];
-
-function main() {
-  console.log('Before sorting:');
-  logElements(arr);
-
-  arr.sort();
-
-  console.log('After sorting:');
-  logElements(arr);
-}
-
-main();
-// Before sorting:
-// "banana"
-// "orange"
-// "apple"
-// After sorting:
-// undefined
-```
-
-  - Disciplined state:
-```js
-function logElements(arr) {
-  while (arr.length > 0) {
-    console.log(arr.shift());
-  }
-}
-
-function main() {
-  const arr = ['banana', 'orange', 'apple'];
-
-  console.log('Before sorting:');
-  logElements([...arr]);
-
-  const sorted = [...arr].sort();
-
-  console.log('After sorting:');
-  logElements([...sorted]);
-}
-
-main();
-// Before sorting:
-// "banana"
-// "orange"
-// "apple"
-// After sorting:
-// "apple"
-// "banana"
-// "orange"
-```
+  - **Disciplined state:**  
+    ```js
+        function logElements(arr) {
+          while (arr.length > 0) {
+            console.log(arr.shift());
+          }
+        }
+        
+        function main() {
+          const arr = ['banana', 'orange', 'apple'];
+        
+          console.log('Before sorting:');
+          logElements([...arr]);
+        
+          const sorted = [...arr].sort();
+        
+          console.log('After sorting:');
+          logElements([...sorted]);
+        }
+        
+        main();
+        // Before sorting:
+        // "banana"
+        // "orange"
+        // "apple"
+        // After sorting:
+        // "apple"
+        // "banana"
+        // "orange"
+    ```
