@@ -117,8 +117,8 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - Algorithmic optimizations (https://habr.com/ru/post/350018/):
     - [Memoization](JavaScript/6\)Optimization-techniques/Algorithmic-optimizations/Memoization/memoization.js); ✅
   - Language-specific optimizations:
-    - [JIT](https://github.com/21Michael/Backend-arch-learning/blob/main/4)NodeJS/ENGINE-V8/Execution-process/Execution_process.md);  ✅
-    - [Garbage-collector](https://github.com/21Michael/Backend-arch-learning/blob/main/4)NodeJS/ENGINE-V8/Garbage-collector/Garbage_collector.md);  ✅
+    - JIT (https://github.com/21Michael/Backend-arch-learning/blob/main/4)NodeJS/ENGINE-V8/Execution-process/Execution_process.md);  ✅
+    - Garbage-collector (https://github.com/21Michael/Backend-arch-learning/blob/main/4)NodeJS/ENGINE-V8/Garbage-collector/Garbage_collector.md);  ✅
   - Engine-specific optimizations:
     - V8;
     - ...
