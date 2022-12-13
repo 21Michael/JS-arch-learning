@@ -17,26 +17,24 @@ const add = (x) => (y) => {
 const res = add(3)(6);
 console.log(res);
 
-//=========================2) Closure recursive========================//
+//=========================2) Closure recursive + valueOf()========================//
 
 {
-  const add = (x) => (y) => {
-    const z = x + y;
-    console.log(x + '+' + y + '=' + z);
-    return add(z);
-  };
+  const add = (x) => {
+    const next = (y) => add(x + y);
+    next.valueOf = () => x;
+
+    return next;
+  }
 
 // const add = x => y => add(x + y);
 
 // Usage
 
-  const a1 = add(5);
-  const a2 = a1(2);
-  const a3 = a2(3);
-  const a4 = a1(1);
-  const a5 = a2(10);
-  console.log(a1, a2, a3, a4, a5);
+  const add5 = add(5);
+  console.log([1,2,3,4,5].map(v => Number(add5(v))))
 
-  const res = add(1)(4)(8)(8);
+
+  const res = Number(add(1)(4)(8)(8));
   console.log(res);
 }
