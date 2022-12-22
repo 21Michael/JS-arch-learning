@@ -23,9 +23,9 @@ Learning basic design principles, tech, patterns, templates, data structure...
     - Class-based vs prototype-based creation;
     - Dynamic dispatch/message passing;
     - Encapsulation;
-    - Composition;
-    - [Inheritance (Prototype);](JavaScript/2\)Techniques/OOP/Inheritance.js) ✅
-    - Delegation;
+    - [Composition;](JavaScript/2\)Techniques/OOP/Composition.md) ✅
+    - [Inheritance (Prototype);](JavaScript/2\)Techniques/OOP/Inheritance.md) ✅
+    - [Delegation;](JavaScript/2\)Techniques/OOP/Delegation.md) ✅
     - Polymorphism;
     - Open recursion;
   - Function programming:
@@ -49,9 +49,20 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - ...
 
 **3) GOF Design patterns:**
+- Fundamental:
+  - [Delegation;](JavaScript/2\)Techniques/OOP/Delegation.md) ✅
+  - Functional;
+  - Immutable interface;
+  - Interface;
+  - Marker interface;
+  - Property container;
+  - Event channel;
 - Creational:
   - Abstract Factory;
   - Builder;
+  - Lazy initialization; *
+  - Multiton; *
+  - RAII; *
   - [Factory;](JavaScript/3\)GOF-Design-Patterns/Creational/Factory) ✅
   - [Prototype;](JavaScript/3\)GOF-Design-Patterns/Creational/prototype.js) ✅
   - [Singleton;](JavaScript/3\)GOF-Design-Patterns/Creational/Singleton) ✅
@@ -63,18 +74,26 @@ Learning basic design principles, tech, patterns, templates, data structure...
   - Iterator;
   - Mediator;
   - Memento;
+  - Null Object; *
   - Observer;
+  - Servant; *
+  - Specification; *
   - State;
   - [Strategy;](JavaScript/3\)GOF-Design-Patterns/Beahaviour/Strategy) ✅
   - Template method;
   - Visitor;
+  - Simple Policy; *
+  - Event listener; *
+  - Single-serving visitor; *
+  - Hierarchical visitor; *
 - Structural:
   - Adapter;
   - Bridge;
-  - Composite;
+  - [Composition;](JavaScript/2\)Techniques/OOP/Composition.md) ✅
   - [Decorator (Wrapper);](JavaScript/3\)GOF-Design-Patterns/Structural/Decorator-(Wrapper)) ✅
   - [Facade;](JavaScript/3\)GOF-Design-Patterns/Structural/facade.js) ✅
   - Flyweight;
+  - Front controller; *
   - [Proxy;](JavaScript/3\)GOF-Design-Patterns/Structural/proxy) ✅
   - Dependency injection;
 
